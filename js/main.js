@@ -20,8 +20,8 @@ function loadQuestionsFromDatabase() {
     if (amountQuestions == "random") {
         amountQuestions = 10;
     }
-    if (category == "random") {
-        category == "";
+    if (category == "&category=random") {
+        category = "";
     }
 
     //Deciding which URL to get questions from
