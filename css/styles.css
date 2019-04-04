@@ -1,0 +1,251 @@
+body {
+    font: 10px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #000;
+}
+header {
+    background-color: #202020;
+}
+
+@media (max-width: 768px) {
+    
+    .logo-row {
+        width: 150px;
+        margin-top: 10px;
+    }
+    .logo {
+        width: 100%;
+        height: 75px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .progress-bar {
+        width: 60%;
+        height: 15px;
+        background-color: #202020;
+        border-radius: 13px;
+        padding: 3px;
+        margin: 10px auto 2px auto;
+        display: none;
+    }
+    .progress {
+        width: 0%;
+        height: 15px;
+        border-radius: 10px;
+        background-color: #fdff82;
+    }
+    #score {
+        color: #fff;
+        text-align: center;
+        margin: 0px 0px 5px 0px;
+    }
+    #options {
+        text-align: center;
+        display: grid;
+        width: 100%;
+    }
+    .option {
+        font-size: 20px;
+        border-radius: 12px;
+        margin: 10px auto 0px auto;
+        background: #202020;
+        color: #fdff82;
+        cursor: pointer;
+        padding: 10px;
+    }
+    .option:focus {
+        outline: 0;
+    }
+    #loadQuizButton {
+        font-size: 14px;
+        border-radius: 12px;
+        margin: 10px auto;
+        background-color: #fdff82;
+        color: #202020;
+        cursor: pointer;
+        padding: 10px;
+    }
+    #loadQuizButton:focus {
+        outline: 0;
+    }
+    #startGame {
+        margin: 0 auto;
+        margin-top: 20px;
+        display: none;
+    }
+    #question {
+        margin: 0px 50px 10px 50px;
+        text-align: center;
+        color: #fff;
+        font-size: 18px;
+    }
+    #message {
+        margin: 10px 50px 0px 50px;
+        text-align: center;
+        color: #fdff82;
+    }
+    .button {
+        background-color: #202020;
+        border-color: #fff;
+        color: #fdff82;
+        padding: 10px;
+        border-radius: 12px;
+        cursor: pointer;
+    }
+    .button:focus {
+        outline: 0;
+    }
+    .hidden {
+        display: none !important;
+    }
+    #startGame {
+        font-size: 20px;
+    }
+    .alternativeList {
+        margin: 0% 20% 0% 20%;
+        display: grid;
+        grid-gap: 10px 10px;
+    }
+    .alternativeButton {
+        display: none;
+        text-align: center;
+        background-color: #202020;
+        border-color: #fff;
+        color: #fdff82;
+        padding: 10px;
+        border-radius: 12px;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    .alternativeButton:focus {
+        outline: 0;
+    }
+}
+
+@media (min-width: 769px) {
+
+    .logo-row {
+        width: 250px;
+        margin-top: 10px;
+    }
+    .logo {
+        width: 100%;
+        height: 125px;
+        text-align: center;
+    }
+    .progress-bar {
+        width: 60%;
+        height: 15px;
+        background-color: #202020;
+        border-radius: 13px;
+        padding: 3px;
+        margin: 10px auto 2px auto;
+        display: none;
+    }
+    .progress {
+        width: 0%;
+        height: 15px;
+        border-radius: 10px;
+        background-color: #fdff82;
+    }
+    #score {
+        color: #fff;
+        text-align: center;
+        margin: 0px 0px 5px 0px;
+    }
+    #options {
+        text-align: center;
+    }
+    .option {
+        font-size: 20px;
+        border-radius: 12px;
+        margin: 15px auto;
+        background: #202020;
+        color: #fdff82;
+        cursor: pointer;
+        padding: 10px;
+    }
+    .option:focus {
+        outline: 0;
+    }
+    #loadQuizButton {
+        font-size: 20px;
+        border-radius: 12px;
+        margin: 15px auto;
+        background-color: #fdff82;
+        color: #202020;
+        cursor: pointer;
+        padding: 10px;
+    }
+    #loadQuizButton:hover {
+        background-color: #202020;
+        color: #fdff82;
+    }
+    #loadQuizButton:focus {
+        outline: 0;
+    }
+    #startGame {
+        margin: 0 auto;
+        margin-top: 20px;
+        display: none;
+    }
+    #question {
+        margin: 0px 50px 20px 50px;
+        text-align: center;
+        color: #fff;
+        font-size: 24px;
+    }
+    #message {
+        margin: 10px 50px 0px 50px;
+        text-align: center;
+        color: #fdff82;
+    }
+    .button {
+        background-color: #202020;
+        border-color: #fff;
+        color: #fdff82;
+        padding: 10px;
+        border-radius: 12px;
+        cursor: pointer;
+    }
+    .button:focus {
+        outline: 0;
+    }
+    .hidden {
+        display: none !important;
+    }
+    #startGame {
+        font-size: 20px;
+    }
+    #startGame:hover {
+        background-color: #fdff82;
+        color: #202020;
+    }
+    .alternativeList {
+        margin: 0% 20% 0% 20%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 15px 15px;
+    }
+    .alternativeButton {
+        width: 100%;
+        height: 100%;
+        display: none;
+        text-align: center;
+        background-color: #202020;
+        border-color: #fff;
+        color: #fdff82;
+        padding: 20px;
+        border-radius: 12px;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    .alternativeButton:focus {
+        outline: 0;
+    }
+    .alternativeButton:hover {
+        background-color: #fdff82 !important;
+        color: #202020 !important;
+    }
+}
