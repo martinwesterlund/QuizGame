@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 body {
-    font: 10px/1.5 Arial, Helvetica, sans-serif;
+    font: 10px/1.5 Open sans, sans-serif;
     padding: 0;
     margin: 0;
     background-color: #000;
