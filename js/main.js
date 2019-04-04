@@ -17,7 +17,7 @@ function loadQuestionsFromDatabase() {
     hideOptions();
     //Getting values from selection panel
     amountQuestions = document.getElementById("amountQuestions").value;
-    var category = "&category" + document.getElementById("category").value;
+    var category = "&category=" + document.getElementById("category").value;
     if (amountQuestions == "random") {
         amountQuestions = 10;
     }
@@ -26,7 +26,7 @@ function loadQuestionsFromDatabase() {
     }
 
     //Deciding which URL to get questions from
-    var url = `https://opentdb.com/api.php?amount=${amountQuestions}&category=${category}`;
+    var url = `https://opentdb.com/api.php?amount=${amountQuestions}${category}`;
 
     //Making HttpRequest
     var httpRequest = new XMLHttpRequest;
