@@ -1,4 +1,3 @@
-
 var questionIndex = 0;
 var res;
 var question;
