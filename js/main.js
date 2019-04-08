@@ -125,7 +125,7 @@ function showAlternatives() {
     alternatives = res.results[questionIndex].incorrect_answers;
     alternatives.push(res.results[questionIndex].correct_answer);
 
-    //Since we are going to pick one alternative at the time, we create a new variable with the increasing list of alternatives
+    //Since we are going to pick one alternative at the time, we create a new variable with the decreasing list of alternatives
     var remainingAlternatives = Array.from(alternatives);
 
     //Picks random alternatives to be displayed in each alternative button
